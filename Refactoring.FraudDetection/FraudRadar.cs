@@ -14,9 +14,6 @@ namespace Refactoring.FraudDetection
     {
         public IEnumerable<FraudResult> Check(string filePath = "")
         {
-            // Load File
-            //var path = OpenFolder(filePath);
-
             // Read lines from file
             var orders = ReadFraudFile(filePath);
 
@@ -113,30 +110,5 @@ namespace Refactoring.FraudDetection
 
             return orders;
         }
-
-        //private string OpenFolder(string folderPath = "")
-        //{
-        //    string directoryName = Path.GetDirectoryName(folderPath);
-
-        //    var fileContent = string.Empty;
-        //    var filePath = string.Empty;
-
-        //    using (OpenFileDialog openFileDialog = new OpenFileDialog())
-        //    {
-        //        openFileDialog.InitialDirectory = directoryName;
-        //        openFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-        //        openFileDialog.FilterIndex = 2;
-        //        openFileDialog.RestoreDirectory = true;
-
-        //        if (openFileDialog.ShowDialog() == DialogResult.OK)
-        //        {
-        //            //Get the path of specified file
-        //            filePath = openFileDialog.FileName;
-        //        }
-        //    }
-
-        //    return filePath;
-
-        //}
     }
 }
