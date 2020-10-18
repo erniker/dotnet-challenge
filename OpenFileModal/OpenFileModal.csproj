@@ -7,7 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="MainWindow\Logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Refactoring.FraudDetection\Refactoring.FraudDetection.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="MainWindow\Logo.ico" />
   </ItemGroup>
 
 </Project>

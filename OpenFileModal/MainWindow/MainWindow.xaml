@@ -1,7 +1,9 @@
 ﻿<Window x:Class="OpenFileModal.MainWindow.MainWindow"
          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Select File" Height="344" Width="560">
+        Title="Select File" Height="344" Width="560"
+        Icon="/MainWindow/Logo.ico">
+    <!--Icon=".\Images\Logo.ico"-->
     <DockPanel Margin="10">
         <WrapPanel HorizontalAlignment="Center" DockPanel.Dock="Top" Margin="0,0,0,10">
             <Button Name="btnOpenFile" Margin="10,0,10,0" Click="btnOpenFile_Click" Width="60">Load file</Button>
