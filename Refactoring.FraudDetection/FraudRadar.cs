@@ -59,7 +59,7 @@ namespace Refactoring.FraudDetection
             return fraudResults;
         }
 
-        public List<Order> ReadFraudFile(string filePath)
+        internal List<Order> ReadFraudFile(string filePath)
         {
             // READ FRAUD LINES
             var orders = new List<Order>();
@@ -87,7 +87,7 @@ namespace Refactoring.FraudDetection
 
             return orders;
         }
-        public List<Order> Normalizations(List<Order> orders)
+        internal List<Order> Normalizations(List<Order> orders)
         {
             // NORMALIZE
             foreach (var order in orders)
